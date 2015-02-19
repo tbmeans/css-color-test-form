@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+    function paintline(hex) {
+    document.getElementById("strip").style.backgroundColor = hex;
+    document.getElementById("strip").innerHTML = hex;
+    }
+  </script>
+</head>
+
+<body style="background-color:lightgrey">
+
+<h1>Color code tester</h1>
+
+<p>Enter a color value in the field below (pound sign provided) and click "Paint" to see what color it is.</p>
+
+<p> <input id="color" type="text" value="#" /> <button onclick='paintline(getElementById("color").value)'>Paint</button> </p>
+
+<p><span id="strip" style="background-color:#ffffff">#FFFFFF</span></p>
+
+</body>
+
+<!-- Sources 
+ Google style attribute > HTML Styles w3schools.com > HTML Sytling: try it yourself 
+ http://www.w3schools.com/js/js_events.asp 
+ Google html css style hex color > http://www.w3schools.com/cssref/css_colors.asp > Color Values: Color Examples Try it yourself 
+ http://www.w3schools.com/js/js_strings.asp 
+ http://www.w3schools.com/jsref/met_element_getattribute.asp 
+ http://www.w3schools.com/jsref/prop_html_innerhtml.asp 
+ Google javascript changing element attribute > DOM Element setAttribute() Method - w3schools.com
+-->
+
+</html>
